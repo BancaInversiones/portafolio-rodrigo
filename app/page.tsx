@@ -145,7 +145,7 @@ const profileMix = [
     "Trabajo desde la traducción y la transcreación para trasladar mensajes entre culturas, lenguas y contextos, preservando su intención, tono y efecto.",
   ],
   [
-    "Docente universitario de marketing y publicidad",
+    "Docente de Mkt",
     "1 año",
     "Entrego herramientas actuales para que los estudiantes comprendan qué mueve la industria y desarrollen perfiles preparados para las agencias de hoy.",
   ],
@@ -162,10 +162,9 @@ export default function Home() {
             loop
             muted
             playsInline
-            preload="metadata"
-            poster="/assets/rodrigo-memoji-poster.jpg"
+            preload="auto"
           >
-            <source src="/assets/rodrigo-memoji.mp4" type="video/mp4" />
+            <source src="/assets/rodrigo-memoji-v3.mp4" type="video/mp4" />
           </video>
         </div>
 
