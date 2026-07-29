@@ -151,49 +151,6 @@ const profileMix = [
   ],
 ] as const;
 
-const projectPreviews = [
-  {
-    number: "01",
-    type: "Estrategia · Ecosistema de marcas",
-    title: "Grupo Inteligencia",
-    description:
-      "De productos financieros complejos a experiencias claras, confiables y accionables.",
-    futureContent: "Estrategia · Arquitectura de marcas · Contenido · Automatización · Resultados",
-  },
-  {
-    number: "02",
-    type: "Creatividad · Campaña integrada",
-    title: "Campaña de agencia",
-    description:
-      "Una idea emblemática de mi recorrido en agencias, desde el insight hasta su despliegue digital.",
-    futureContent: "Desafío · Insight · Idea · Mi rol · Piezas · Créditos",
-  },
-  {
-    number: "03",
-    type: "Plataforma creativa · Negocio",
-    title: "Duerme tranquilo",
-    description:
-      "Una tensión humana convertida en una plataforma capaz de unir comunicación y propuesta de valor.",
-    futureContent: "Concepto · Sistema verbal · Adaptaciones · Aplicaciones · Impacto",
-  },
-  {
-    number: "04",
-    type: "Docencia · Formación aplicada",
-    title: "Duoc UC",
-    description:
-      "La experiencia de la industria transformada en metodologías para formar nuevos publicistas.",
-    futureContent: "Asignaturas · Metodología · Casos · Herramientas · Aprendizajes",
-  },
-  {
-    number: "05",
-    type: "Traducción · Adaptación cultural",
-    title: "EN–ES",
-    description:
-      "Un microcaso para demostrar cómo una idea conserva su intención cuando cambia de idioma, cultura y contexto.",
-    futureContent: "Original · Desafío de tono · Decisión · Adaptación final · Aprendizaje",
-  },
-] as const;
-
 export default function Home() {
   return (
     <main className="home">
@@ -262,37 +219,6 @@ export default function Home() {
               <span className="profile-role__years">{years}</span>
               <strong>{title}</strong>
               <p>{description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section id="proyectos" className="selected-work" aria-labelledby="selected-work-title">
-        <div className="selected-work__heading">
-          <p>Vista previa de la próxima etapa</p>
-          <h2 id="selected-work-title">Proyectos seleccionados</h2>
-          <span>
-            Esta será la sección principal del portafolio. Cada espacio se convertirá
-            en un caso completo cuando incorporemos sus materiales y resultados.
-          </span>
-        </div>
-
-        <div className="projects-grid">
-          {projectPreviews.map((project) => (
-            <article className="project-card" key={project.number}>
-              <div className="project-card__visual" aria-hidden="true">
-                <span>{project.number}</span>
-                <i>Próximamente</i>
-              </div>
-              <div className="project-card__content">
-                <p>{project.type}</p>
-                <h3>{project.title}</h3>
-                <span>{project.description}</span>
-                <small>{project.futureContent}</small>
-                <div className="project-card__action" aria-hidden="true">
-                  Explorar caso
-                </div>
-              </div>
             </article>
           ))}
         </div>
